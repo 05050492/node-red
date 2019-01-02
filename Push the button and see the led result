@@ -1,0 +1,55 @@
+[
+    {
+        "id": "ce47eaf5.10ce58",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "425e8cc9.c69184",
+        "type": "rpi-gpio in",
+        "z": "ce47eaf5.10ce58",
+        "name": "Button",
+        "pin": "7",
+        "intype": "up",
+        "debounce": "25",
+        "read": true,
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "b879524d.f67e5",
+                "2776a688.d6e27a"
+            ]
+        ]
+    },
+    {
+        "id": "b879524d.f67e5",
+        "type": "debug",
+        "z": "ce47eaf5.10ce58",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 440,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "2776a688.d6e27a",
+        "type": "rpi-gpio out",
+        "z": "ce47eaf5.10ce58",
+        "name": "LED",
+        "pin": "11",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 420,
+        "y": 260,
+        "wires": []
+    }
+]
